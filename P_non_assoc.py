@@ -1,4 +1,3 @@
-import math
 from rtz import rtz
 
 
@@ -7,13 +6,9 @@ def p_non_assoc(m):
     tot_events = 0
     non_assoc_events = 0
 
-    for h_val in range(2, m):
+    for h in range(2, m):
 
-        h = h_val
-
-        for k_val in range(1, m - 1):
-
-            k = k_val
+        for k in range(1, h):
 
             for c_int in range(2 ** m, 2 ** (m + 1)):
 
