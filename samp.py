@@ -10,11 +10,13 @@ def samp(m, act_prob):
     prob = 0
     perc_diff = 1
 
+    tot_cases = (2 ** (3 * m)) * (((m - 2)(m - 1)) / 2)
+
     while perc_diff >= 0.025 or perc_diff <= -0.025:
 
         for h in range(2, m):
 
-            for k in range(1, m - 1):
+            for k in range(1, h):
 
                 c_int = random.randint(2 ** m, 2 ** (m + 1) - 1)
                 b_float = random.randint(2 ** m, 2 ** (m + 1) - 1) / (2 ** k)
