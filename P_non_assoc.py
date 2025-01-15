@@ -33,8 +33,8 @@ def p_non_assoc(m):
     print("\nTotal Events = " + str(tot_events))
     print("Non-Associativity Events = " + str(non_assoc_events))
 
-    probability = non_assoc_events / tot_events
-    return probability
+    prob = non_assoc_events / tot_events
+    return prob
 
 
 print("\n" * 64)
